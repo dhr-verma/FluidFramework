@@ -14,7 +14,6 @@ import { Lumberjack } from "@fluidframework/server-services-telemetry";
 import { setupMaster, setupWorker } from "@socket.io/sticky";
 import { IRedisClientConnectionManager } from "@fluidframework/server-services-utils";
 import * as socketIo from "./socketIoServer";
-import { IRedisClientConnectionManager } from "./redisClientConnectionManager";
 
 /**
  * @internal

@@ -9,7 +9,6 @@ import {
 	IRedisClientConnectionManager,
 } from "@fluidframework/server-services-utils";
 import { Lumberjack } from "@fluidframework/server-services-telemetry";
-import { IRedisClientConnectionManager } from "@fluidframework/server-services-shared";
 
 /**
  * Redis based cache redisClientConnectionManager.getRedisClient()

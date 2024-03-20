@@ -11,7 +11,6 @@ import {
 	IRedisClientConnectionManager,
 } from "@fluidframework/server-services-utils";
 import { Lumberjack } from "@fluidframework/server-services-telemetry";
-import { IRedisClientConnectionManager } from "@fluidframework/server-services-shared";
 
 // Manages the set of connected clients in redis hashes with an expiry of 'expireAfterSeconds'.
 /**

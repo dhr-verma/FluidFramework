@@ -10,7 +10,6 @@ import {
 	ISocketIoRedisConnection,
 	ISocketIoRedisSubscriptionConnection,
 } from "./redisSocketIoAdapter";
-import { IRedisClientConnectionManager } from "./redisClientConnectionManager";
 
 /**
  * Simple implementation of ISocketIoRedisConnection, which wraps a redis client
