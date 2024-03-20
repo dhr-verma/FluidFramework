@@ -12,6 +12,7 @@ import {
 	executeRedisMultiWithHmsetExpire,
 	executeRedisMultiWithHmsetExpireAndLpush,
 	IRedisParameters,
+	IRedisClientConnectionManager,
 } from "@fluidframework/server-services-utils";
 import {
 	BaseTelemetryProperties,

@@ -8,6 +8,7 @@ import { IClientManager, ISequencedSignalClient } from "@fluidframework/server-s
 import {
 	executeRedisMultiWithHmsetExpire,
 	IRedisParameters,
+	IRedisClientConnectionManager,
 } from "@fluidframework/server-services-utils";
 import { Lumberjack } from "@fluidframework/server-services-telemetry";
 import { IRedisClientConnectionManager } from "@fluidframework/server-services-shared";
@@ -33,7 +34,7 @@ export class ClientManager implements IClientManager {
 		}
 
 		redisClientConnectionManager.getRedisClient().on("error", (error) => {
-			Lumberjack.error("[DHRUV DEBUG] Client Manager Redis Error", undefined, error);
+			Lumberjack.error("Client Manager Redis Error", undefined, error);
 		});
 	}
 
