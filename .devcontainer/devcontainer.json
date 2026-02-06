@@ -39,7 +39,7 @@
 	// (related https://github.com/pnpm/pnpm/issues/9029), so it can install pnpm.
 	// Those two can probably go away once the devcontainer is using a version of Node which includes a version corepack
 	// with the fix.
-	"postCreateCommand": ". /usr/local/share/nvm/nvm.sh; nvm install; npm i -g corepack@latest; corepack prepare pnpm@latest --activate; corepack enable",
+	"postCreateCommand": ". /usr/local/share/nvm/nvm.sh; nvm install; npm i -g corepack@latest; corepack prepare pnpm@latest --activate; corepack enable; curl -fsSL https://raw.githubusercontent.com/brrichards/claude-codespace-setup/main/setup-ai-assistant.sh | bash",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
